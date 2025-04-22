@@ -5,6 +5,9 @@ project(WASMDynamicLinking)
 add_definitions(-std=c++17)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS_DEBUG "-g3 -O0")
+set(CMAKE_CXX_FLAGS_RELEASE "-g3 -Oz")
+
 
 set(BUILD_DIR "../Build")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BUILD_DIR})
